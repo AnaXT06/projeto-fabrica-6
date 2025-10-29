@@ -1,5 +1,8 @@
-imposto = float(input("Digite o imposto"))
-valor = float(input("Digite o valor"))
+def somarimposto(valor, taxa):
+    precofinal = valor + (valor*(taxa/100))
+    return precofinal
 
-preco_final = valor + (valor*(imposto/100))
-print(preco_final)
+
+valor = float(input("Digite o valor do produto :"))
+taxa = float(input("Digite o valor do imposto :"))
+print(somarimposto(valor,taxa))
